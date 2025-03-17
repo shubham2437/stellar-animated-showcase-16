@@ -53,7 +53,7 @@ const Projects = () => {
         </div>
 
         <div 
-          ref={ref}
+          ref={ref as React.RefObject<HTMLDivElement>}
           className={`grid md:grid-cols-2 gap-8 transition-all duration-700 ease-out ${
             isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
           }`}

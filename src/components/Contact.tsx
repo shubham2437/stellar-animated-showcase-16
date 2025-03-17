@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Linkedin, GitHub, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin, Github, Send } from 'lucide-react';
 import useInView from '../hooks/useInView';
 import { toast } from 'sonner';
 
@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
 
         <div 
-          ref={ref}
+          ref={ref as React.RefObject<HTMLDivElement>}
           className={`grid md:grid-cols-2 gap-12 transition-all duration-700 ease-out ${
             isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
           }`}
