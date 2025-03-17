@@ -103,7 +103,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="bg-space-accent bg-opacity-20 p-3 rounded-full hover:bg-opacity-40 transition-all duration-300"
                 >
-                  <GitHub size={24} className="text-space-accent" />
+                  <Github size={24} className="text-space-accent" />
                 </a>
               </div>
             </div>
